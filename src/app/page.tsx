@@ -36,7 +36,7 @@ const bookData = [
     content: (
       <div className="relative">
         <div className="absolute top-3 right-3 left-3 bg-white/80 rounded-lg p-2">
-          <p className="mb-4">Vào một ngày mùa hè nóng bức. Ánh nắng mặt trời hừng hực chiếu thẳng xuống mặt đất.</p>
+          <p className="mb-2">Vào một ngày mùa hè nóng bức. Ánh nắng mặt trời hừng hực chiếu thẳng xuống mặt đất.</p>
           <p>Có một con sư tử đang nằm dưới bóng rợp của một tán cây lớn và lim dim ngủ.</p>
         </div>
         <div className="mt-3">
@@ -57,8 +57,8 @@ const bookData = [
     content: (
       <div className="relative">
         <div className="absolute top-3 right-3 left-3 bg-white/80 rounded-lg p-2">
-          <p className="mb-4">Gần gốc cây, có một lỗ nhỏ dưới đất, là hang của một con chuột.</p>
-          <p>Lúc đó chuột ra khỏi hang và thấy một con sư tử đang nằm ngủ.</p>
+          <p className="mb-1">Gần gốc cây có hang chuột, chuột chui ra và thấy sư tử đang ngủ.</p>
+          <p>Không biết sợ, nó tinh nghịch chạy qua chạy lại trên người sư tử để trêu cho vui.</p>
         </div>
 
         <div className="mt-3">
@@ -78,30 +78,9 @@ const bookData = [
   {
     content: (
       <div className="relative">
-        <div className="absolute bottom-3 right-3 bg-white/80 rounded-lg p-2 w-1/2">
-          <p className="mb-4">Không hay biết về sức mạnh của sư tử, chuột nảy ra một ý tưởng.</p>
-          <p>Nó nghĩ đánh thức sư tử bằng cách chạy qua chạy lại trên mình sư tử cho vui.</p>
-        </div>
-
-        <div className="mt-3">
-          <img
-            src="/lion/4.webp"
-            alt="Chapter 3 Illustration"
-            className="mx-auto rounded-lg shadow-lg w-full max-w-lg"
-            onError={(e) => {
-              e.currentTarget.src = "https://placehold.co/600x400/4f46e5/ffffff?text=Image+Not+Found";
-            }}
-          />
-        </div>
-      </div>
-    ),
-    pageNumber: 4,
-  },
-  {
-    content: (
-      <div className="relative">
         <div className="absolute top-3 right-3 left-3 bg-white/80 rounded-lg p-2">
-          <p className="mb-4">Thật không may, sư tử tỉnh giấc và nhanh tay bắt được chuột.</p>
+          <p className="mb-2">Thật không may, sư tử tỉnh giấc và nhanh tay bắt được chuột.</p>
+          <p className="">Chuột bèn xin sư tử tha mạng.</p>
         </div>
         <div className="mt-3">
           <img
@@ -115,36 +94,14 @@ const bookData = [
         </div>
       </div>
     ),
-    pageNumber: 5,
-  },
-  {
-    content: (
-      <div className="relative">
-        <div className="absolute top-3 right-3 left-3 bg-white/80 rounded-lg p-2 w-1/2">
-          <p className="mb-4">Chuột bèn xin sư tử tha mạng.</p>
-        </div>
-        <div className="mt-3">
-          <img
-            src="/lion/6.webp"
-            alt="Chapter 5 Illustration"
-            className="mx-auto rounded-lg shadow-lg w-full max-w-lg"
-            onError={(e) => {
-              e.currentTarget.src = "https://placehold.co/600x400/4f46e5/ffffff?text=Image+Not+Found";
-            }}
-          />
-        </div>
-      </div>
-    ),
-    pageNumber: 6,
+    pageNumber: 4,
   },
   {
     content: (
       <div className="relative">
         <div className="absolute top-3 left-3 bg-white/80 rounded-lg p-2 w-1/2">
-          <p className="mb-4">
-            Sẵn với bản tính rộng lượng tự nhiên, sư tử liền thả chuột ra. Chuột hứa sẽ giúp sư tử khi có dịp.
-          </p>
-          <p>Sư tử nghe thế liền cười lớn. Làm thế nào một con chuột nhỏ bé có thể giúp chúa tể sơn lâm được?</p>
+          <p className="mb-2">Sư tử rộng lượng tha cho chuột, chuột hứa sẽ báo đáp khi có cơ hội.</p>
+          <p>Sư tử bật cười vì không tin một con chuột nhỏ bé có thể giúp mình.</p>
         </div>
         <div className="mt-3 flex justify-center">
           <div className="grid grid-cols-1 gap-4">
@@ -160,36 +117,16 @@ const bookData = [
         </div>
       </div>
     ),
-    pageNumber: 7,
-  },
-  {
-    content: (
-      <div className="relative">
-        <div className="absolute bottom-3 right-3 bg-white/80 rounded-lg p-2 w-1/2">
-          <p className="mb-4">
-            Vài ngày sau đó, chuột đi ngang qua một khu rừng thì bắt gặp sư tử đang bị vướng lưới của thợ săn.
-          </p>
-        </div>
-        <div className="mt-3">
-          <img
-            src="/lion/8.webp"
-            alt="Chapter 7 Illustration"
-            className="mx-auto rounded-lg shadow-lg w-full max-w-lg"
-            onError={(e) => {
-              e.currentTarget.src = "https://placehold.co/600x400/4f46e5/ffffff?text=Image+Not+Found";
-            }}
-          />
-        </div>
-      </div>
-    ),
-    pageNumber: 8,
+    pageNumber: 5,
   },
   {
     content: (
       <div className="relative">
         <div className="absolute bottom-3 left-3 bg-white/80 rounded-lg p-2 w-1/2">
-          <p className="mb-4">Ngay lập tức, chuột bắt tay làm việc bằng cách gặm đứt những sợi dây thừng.</p>
-          <p>Chẳng bao lâu, chuột đã giúp cho sư tử thoát khỏi lưới.</p>
+          <p className="mb-2">
+            Nhưng không may vài ngày sau, chuột thấy sư tử bị mắc bẫy của thợ săn và liền gặm dây lưới cứu sư tử.
+          </p>
+          <p>Nhờ đó, sư tử được tự do. Sư tử cảm ơn chuột</p>
         </div>
         <div className="mt-3">
           <img
@@ -203,7 +140,7 @@ const bookData = [
         </div>
       </div>
     ),
-    pageNumber: 9,
+    pageNumber: 6,
   },
 ];
 
