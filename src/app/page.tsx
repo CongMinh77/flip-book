@@ -15,17 +15,10 @@ const bookData = [
   {
     content: (
       <div className="text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">Sách Mẫu</h1>
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">Chú Vịt Xám</h1>
         <p className="text-lg md:text-xl italic">Trang bìa</p>
         <div className="mt-8">
-          <img
-            src="/book-cover.jpg"
-            alt="Book Cover"
-            className="mx-auto rounded-lg shadow-lg"
-            onError={(e) => {
-              e.currentTarget.src = "https://via.placeholder.com/400x500?text=Sách+Mẫu";
-            }}
-          />
+          <img src="/book-cover.jpg" alt="Book Cover" className="mx-auto rounded-lg shadow-lg" />
         </div>
       </div>
     ),
@@ -44,14 +37,7 @@ const bookData = [
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
         <div className="mt-6">
-          <img
-            src="/chapter1-image.jpg"
-            alt="Chapter 1 Illustration"
-            className="mx-auto rounded-lg shadow-lg"
-            onError={(e) => {
-              e.currentTarget.src = "https://via.placeholder.com/400x300?text=Chương+1";
-            }}
-          />
+          <img src="/chapter1-image.jpg" alt="Chapter 1 Illustration" className="mx-auto rounded-lg shadow-lg" />
         </div>
       </div>
     ),
@@ -70,14 +56,7 @@ const bookData = [
           aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
         </p>
         <div className="mt-6">
-          <img
-            src="/chapter2-image.jpg"
-            alt="Chapter 2 Illustration"
-            className="mx-auto rounded-lg shadow-lg"
-            onError={(e) => {
-              e.currentTarget.src = "https://via.placeholder.com/400x300?text=Chương+2";
-            }}
-          />
+          <img src="/chapter2-image.jpg" alt="Chapter 2 Illustration" className="mx-auto rounded-lg shadow-lg" />
         </div>
       </div>
     ),
@@ -97,14 +76,7 @@ const bookData = [
           numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
         </p>
         <div className="mt-6">
-          <img
-            src="/chapter3-image.jpg"
-            alt="Chapter 3 Illustration"
-            className="mx-auto rounded-lg shadow-lg"
-            onError={(e) => {
-              e.currentTarget.src = "https://via.placeholder.com/400x300?text=Chương+3";
-            }}
-          />
+          <img src="/chapter3-image.jpg" alt="Chapter 3 Illustration" className="mx-auto rounded-lg shadow-lg" />
         </div>
       </div>
     ),
@@ -120,14 +92,7 @@ const bookData = [
           molestias excepturi.
         </p>
         <div className="mt-6">
-          <img
-            src="/chapter4-image.jpg"
-            alt="Chapter 4 Illustration"
-            className="mx-auto rounded-lg shadow-lg"
-            onError={(e) => {
-              e.currentTarget.src = "https://via.placeholder.com/400x300?text=Chương+4";
-            }}
-          />
+          <img src="/chapter4-image.jpg" alt="Chapter 4 Illustration" className="mx-auto rounded-lg shadow-lg" />
         </div>
       </div>
     ),
@@ -143,14 +108,7 @@ const bookData = [
           nulla pariatur.
         </p>
         <div className="mt-6">
-          <img
-            src="/chapter5-image.jpg"
-            alt="Chapter 5 Illustration"
-            className="mx-auto rounded-lg shadow-lg"
-            onError={(e) => {
-              e.currentTarget.src = "https://via.placeholder.com/400x300?text=Chương+5";
-            }}
-          />
+          <img src="/chapter5-image.jpg" alt="Chapter 5 Illustration" className="mx-auto rounded-lg shadow-lg" />
         </div>
       </div>
     ),
@@ -175,14 +133,7 @@ const bookData = [
                 e.currentTarget.src = "https://via.placeholder.com/200x150?text=Hình+1";
               }}
             />
-            <img
-              src="/chapter6-image2.jpg"
-              alt="Chapter 6 Illustration 2"
-              className="rounded-lg shadow-lg"
-              onError={(e) => {
-                e.currentTarget.src = "https://via.placeholder.com/200x150?text=Hình+2";
-              }}
-            />
+            <img src="/chapter6-image2.jpg" alt="Chapter 6 Illustration 2" className="rounded-lg shadow-lg" />
           </div>
         </div>
       </div>
@@ -199,14 +150,7 @@ const bookData = [
           asperiores repellat.
         </p>
         <div className="mt-6">
-          <img
-            src="/chapter7-image.jpg"
-            alt="Chapter 7 Illustration"
-            className="mx-auto rounded-lg shadow-lg"
-            onError={(e) => {
-              e.currentTarget.src = "https://via.placeholder.com/400x300?text=Chương+7";
-            }}
-          />
+          <img src="/chapter7-image.jpg" alt="Chapter 7 Illustration" className="mx-auto rounded-lg shadow-lg" />
         </div>
       </div>
     ),
@@ -221,14 +165,7 @@ const bookData = [
           est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.
         </p>
         <div className="mt-6">
-          <img
-            src="/chapter8-image.jpg"
-            alt="Chapter 8 Illustration"
-            className="mx-auto rounded-lg shadow-lg"
-            onError={(e) => {
-              e.currentTarget.src = "https://via.placeholder.com/400x300?text=Chương+8";
-            }}
-          />
+          <img src="/chapter8-image.jpg" alt="Chapter 8 Illustration" className="mx-auto rounded-lg shadow-lg" />
         </div>
       </div>
     ),
@@ -244,22 +181,8 @@ const bookData = [
         </p>
         <div className="mt-6 flex justify-center">
           <div className="grid grid-cols-2 gap-4">
-            <img
-              src="/chapter9-image1.jpg"
-              alt="Chapter 9 Illustration 1"
-              className="rounded-lg shadow-lg"
-              onError={(e) => {
-                e.currentTarget.src = "https://via.placeholder.com/200x150?text=Hình+3";
-              }}
-            />
-            <img
-              src="/chapter9-image2.jpg"
-              alt="Chapter 9 Illustration 2"
-              className="rounded-lg shadow-lg"
-              onError={(e) => {
-                e.currentTarget.src = "https://via.placeholder.com/200x150?text=Hình+4";
-              }}
-            />
+            <img src="/chapter9-image1.jpg" alt="Chapter 9 Illustration 1" className="rounded-lg shadow-lg" />
+            <img src="/chapter9-image2.jpg" alt="Chapter 9 Illustration 2" className="rounded-lg shadow-lg" />
           </div>
         </div>
       </div>
@@ -275,14 +198,7 @@ const bookData = [
           repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus.
         </p>
         <div className="mt-6">
-          <img
-            src="/chapter10-image.jpg"
-            alt="Chapter 10 Illustration"
-            className="mx-auto rounded-lg shadow-lg"
-            onError={(e) => {
-              e.currentTarget.src = "https://via.placeholder.com/400x300?text=Chương+10";
-            }}
-          />
+          <img src="/chapter10-image.jpg" alt="Chapter 10 Illustration" className="mx-auto rounded-lg shadow-lg" />
         </div>
       </div>
     ),
@@ -297,14 +213,7 @@ const bookData = [
           alias consequatur aut perferendis doloribus asperiores repellat.
         </p>
         <div className="mt-6">
-          <img
-            src="/chapter11-image.jpg"
-            alt="Chapter 11 Illustration"
-            className="mx-auto rounded-lg shadow-lg"
-            onError={(e) => {
-              e.currentTarget.src = "https://via.placeholder.com/400x300?text=Chương+11";
-            }}
-          />
+          <img src="/chapter11-image.jpg" alt="Chapter 11 Illustration" className="mx-auto rounded-lg shadow-lg" />
         </div>
       </div>
     ),
@@ -322,9 +231,6 @@ const bookData = [
             src="/image/wallhaven-4gd187_1920x1080.png"
             alt="Book End"
             className="mx-auto rounded-lg shadow-lg"
-            onError={(e) => {
-              e.currentTarget.src = "https://via.placeholder.com/400x300?text=Kết+Thúc";
-            }}
           />
         </div>
       </div>
