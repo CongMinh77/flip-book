@@ -53,19 +53,19 @@ export const FlipBook: React.FC<FlipBookProps> = ({ pages }) => {
           onFlip={onPageFlip}
           className="mx-auto"
           ref={book}
-          style={{ width: 1000, height: 1533 }}
           startPage={0}
-          drawShadow={false}
-          flippingTime={3}
+          drawShadow={true}
+          flippingTime={1000}
           usePortrait={false}
           startZIndex={0}
           autoSize={true}
-          maxShadowOpacity={0}
+          maxShadowOpacity={0.5}
           clickEventForward={false}
-          useMouseEvents={false}
-          swipeDistance={2}
-          showPageCorners={false}
-          disableFlipByClick={false}>
+          useMouseEvents={true}
+          swipeDistance={20}
+          showPageCorners={true}
+          disableFlipByClick={false}
+          style={{}}>
           {pages.map((page, index) => (
             <Page key={index} pageNumber={page.pageNumber}>
               {page.content}

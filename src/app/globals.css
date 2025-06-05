@@ -23,8 +23,11 @@ body {
 .page {
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 0 10px 10px 0;
+  border-radius: 2px;
   overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #e5e7eb;
 }
 
 .page-content {
@@ -32,17 +35,52 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   padding: 1.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
+/* Page flip animation */
+.page-flip {
+  background-color: #f8f9fa;
+}
+
+/* Page corners */
+.page-cover {
+  background-color: #f3f4f6;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
   .page {
-    border-radius: 0 5px 5px 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
   }
   
   .page-content {
     padding: 1rem;
   }
+}
+
+/* Hide scrollbar but allow scrolling */
+.page-content::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.page-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0.25rem;
+}
+
+.page-content::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 0.25rem;
+}
+
+.page-content::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
 }
