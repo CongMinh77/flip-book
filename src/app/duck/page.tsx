@@ -54,6 +54,7 @@ const bookData = [
       </div>
     ),
     pageNumber: 2,
+    audioSrc: "/sound-duck/1.mp3",
   },
   {
     content: (
@@ -77,6 +78,7 @@ const bookData = [
       </div>
     ),
     pageNumber: 3,
+    audioSrc: "/sound-duck/2.mp3",
   },
   {
     content: (
@@ -101,6 +103,7 @@ const bookData = [
       </div>
     ),
     pageNumber: 4,
+    audioSrc: "/sound-duck/3.mp3",
   },
   {
     content: (
@@ -126,6 +129,7 @@ const bookData = [
       </div>
     ),
     pageNumber: 5,
+    audioSrc: "/sound-duck/4.mp3",
   },
   {
     content: (
@@ -149,6 +153,7 @@ const bookData = [
       </div>
     ),
     pageNumber: 6,
+    audioSrc: "/sound-duck/5.mp3",
   },
 ];
 

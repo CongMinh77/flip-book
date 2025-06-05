@@ -1,19 +1,83 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import HTMLFlipBook from "react-pageflip";
-import { Page } from "../Page";
-import { BookControls } from "../BookControls";
+import "@/app/globals.css";
+
+// Audio player component
+const AudioPlayer = ({ src, pageNumber }: { src: string; pageNumber: number }) => {
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const togglePlay = (e: React.MouseEvent) => {
+    e.stopPropagation(); // Stop the click event from bubbling up to parent elements
+    e.preventDefault(); // Prevent any default behavior
+
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play().catch((error) => {
+          console.error("Audio playback failed:", error);
+        });
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
+  useEffect(() => {
+    // Pause audio when component unmounts or page changes
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        setIsPlaying(false);
+      }
+    };
+  }, [pageNumber]);
+
+  return (
+    <>
+      <button
+        onClick={(e) => togglePlay(e as React.MouseEvent)}
+        className="absolute right-[50%] translate-x-1/2 bottom-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg z-10"
+        aria-label={isPlaying ? "Pause audio" : "Play audio"}
+        onMouseDown={(e) => e.stopPropagation()} // Prevent any mouse down events from bubbling
+        onTouchStart={(e) => e.stopPropagation()}>
+        {" "}
+        {/* For touch devices */}
+        {isPlaying ? (
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              fillRule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z"
+              clipRule="evenodd"
+            />
+          </svg>
+        ) : (
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              fillRule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+              clipRule="evenodd"
+            />
+          </svg>
+        )}
+      </button>
+      <audio ref={audioRef} src={src} onEnded={() => setIsPlaying(false)} />
+    </>
+  );
+};
+
+interface PageType {
+  content: React.ReactNode;
+  pageNumber: number;
+  audioSrc?: string;
+}
 
 /**
  * FlipBook component that provides an interactive book reading experience
  * with page flip animations
- * @param {Object} props - Component props
- * @param {Array} props.pages - Array of page content to display in the book
  */
 interface FlipBookProps {
-  pages: Array<{
-    content: React.ReactNode;
-    pageNumber: number;
-  }>;
+  pages: PageType[];
   height?: number;
 }
 
@@ -65,17 +129,38 @@ export const FlipBook: React.FC<FlipBookProps> = ({ pages, height = 800 }) => {
           useMouseEvents={true}
           swipeDistance={20}
           showPageCorners={true}
-          disableFlipByClick={false}
+          disableFlipByClick={true}
           style={{}}>
           {pages.map((page, index) => (
-            <Page key={index} pageNumber={page.pageNumber}>
-              {page.content}
-            </Page>
+            <div key={index} className="page relative">
+              <div className="page-content">
+                {page.content}
+                {page.audioSrc && <AudioPlayer src={`${page.audioSrc}`} pageNumber={page.pageNumber} />}
+              </div>
+            </div>
           ))}
         </HTMLFlipBook>
       </div>
 
-      <BookControls currentPage={currentPage} totalPages={totalPages} onPrevPage={prevPage} onNextPage={nextPage} />
+      <AudioPlayer src={`/sound-lion/demo.mp3`} pageNumber={1} />
+
+      <div className="flex justify-center gap-4 mt-4">
+        <button
+          onClick={prevPage}
+          disabled={currentPage === 0}
+          className="px-4 py-2 bg-blue-500 text-white rounded disabled:opacity-50">
+          Previous
+        </button>
+        <span className="px-4 py-2">
+          Page {currentPage + 1} of {totalPages}
+        </span>
+        <button
+          onClick={nextPage}
+          disabled={currentPage === totalPages - 1}
+          className="px-4 py-2 bg-blue-500 text-white rounded disabled:opacity-50">
+          Next
+        </button>
+      </div>
     </div>
   );
 };
