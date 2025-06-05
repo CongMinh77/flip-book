@@ -14,9 +14,10 @@ interface FlipBookProps {
     content: React.ReactNode;
     pageNumber: number;
   }>;
+  height?: number;
 }
 
-export const FlipBook: React.FC<FlipBookProps> = ({ pages }) => {
+export const FlipBook: React.FC<FlipBookProps> = ({ pages, height = 800 }) => {
   const book = useRef<any>(null);
   const [currentPage, setCurrentPage] = useState(0);
   const [totalPages, setTotalPages] = useState(pages.length);
@@ -42,7 +43,7 @@ export const FlipBook: React.FC<FlipBookProps> = ({ pages }) => {
       <div className="w-full max-w-4xl mx-auto my-8">
         <HTMLFlipBook
           width={1200}
-          height={900}
+          height={height}
           size="stretch"
           minWidth={550}
           maxWidth={1200}

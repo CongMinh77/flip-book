@@ -157,7 +157,7 @@ export default function DuckPage() {
     <main className="flex min-h-screen flex-col items-center justify-between px-4 md:px-24">
       <div className="w-full max-w-5xl">
         <div className="w-full">
-          <FlipBook pages={bookData} />
+          <FlipBook pages={bookData} height={1100} />
         </div>
       </div>
     </main>
