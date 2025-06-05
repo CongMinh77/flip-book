@@ -16,7 +16,7 @@ body {
 
 /* Flip book custom styles */
 .page {
-  background-color: #fff;
+  background-color: #f1efed;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   overflow: hidden;
