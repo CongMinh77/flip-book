@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react';
-import HTMLFlipBook from 'react-pageflip';
-import { Page } from '../Page';
-import { BookControls } from '../BookControls';
+import React, { useRef, useState } from "react";
+import HTMLFlipBook from "react-pageflip";
+import { Page } from "../Page";
+import { BookControls } from "../BookControls";
 
 /**
  * FlipBook component that provides an interactive book reading experience
@@ -53,7 +53,19 @@ export const FlipBook: React.FC<FlipBookProps> = ({ pages }) => {
           onFlip={onPageFlip}
           className="mx-auto"
           ref={book}
-        >
+          style={{ width: 550, height: 733 }}
+          startPage={0}
+          drawShadow={false}
+          flippingTime={0}
+          usePortrait={false}
+          startZIndex={0}
+          autoSize={false}
+          maxShadowOpacity={0}
+          clickEventForward={false}
+          useMouseEvents={false}
+          swipeDistance={0}
+          showPageCorners={false}
+          disableFlipByClick={false}>
           {pages.map((page, index) => (
             <Page key={index} pageNumber={page.pageNumber}>
               {page.content}
@@ -61,13 +73,8 @@ export const FlipBook: React.FC<FlipBookProps> = ({ pages }) => {
           ))}
         </HTMLFlipBook>
       </div>
-      
-      <BookControls 
-        currentPage={currentPage} 
-        totalPages={totalPages} 
-        onPrevPage={prevPage} 
-        onNextPage={nextPage} 
-      />
+
+      <BookControls currentPage={currentPage} totalPages={totalPages} onPrevPage={prevPage} onNextPage={nextPage} />
     </div>
   );
 };
