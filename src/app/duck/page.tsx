@@ -54,7 +54,6 @@ const bookData = [
       </div>
     ),
     pageNumber: 2,
-    audioSrc: "/sound-duck/1.mp3",
   },
   {
     content: (
@@ -78,7 +77,6 @@ const bookData = [
       </div>
     ),
     pageNumber: 3,
-    audioSrc: "/sound-duck/2.mp3",
   },
   {
     content: (
@@ -103,7 +101,6 @@ const bookData = [
       </div>
     ),
     pageNumber: 4,
-    audioSrc: "/sound-duck/3.mp3",
   },
   {
     content: (
@@ -129,7 +126,6 @@ const bookData = [
       </div>
     ),
     pageNumber: 5,
-    audioSrc: "/sound-duck/4.mp3",
   },
   {
     content: (
@@ -156,7 +152,6 @@ const bookData = [
       </div>
     ),
     pageNumber: 6,
-    audioSrc: "/sound-duck/5.mp3",
   },
 ];
 
@@ -165,7 +160,7 @@ export default function DuckPage() {
     <main className="flex min-h-screen flex-col items-center justify-between px-4 md:px-24">
       <div className="w-full max-w-5xl">
         <div className="w-full">
-          <FlipBook pages={bookData} height={1100} />
+          <FlipBook pages={bookData} height={1100} srcAudio="/sound-duck/duck.mp3" />
         </div>
       </div>
     </main>

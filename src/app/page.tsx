@@ -52,7 +52,6 @@ const bookData = [
       </div>
     ),
     pageNumber: 2,
-    audioSrc: "/sound-lion/1.mp3",
   },
   {
     content: (
@@ -75,7 +74,6 @@ const bookData = [
       </div>
     ),
     pageNumber: 3,
-    audioSrc: "/sound-lion/2.mp3",
   },
   {
     content: (
@@ -97,7 +95,6 @@ const bookData = [
       </div>
     ),
     pageNumber: 4,
-    audioSrc: "/sound-lion/3.mp3",
   },
   {
     content: (
@@ -121,7 +118,6 @@ const bookData = [
       </div>
     ),
     pageNumber: 5,
-    audioSrc: "/sound-lion/4.mp3",
   },
   {
     content: (
@@ -146,7 +142,6 @@ const bookData = [
       </div>
     ),
     pageNumber: 6,
-    audioSrc: "/sound-lion/5.mp3",
   },
 ];
 
@@ -155,7 +150,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between px-4 md:px-24">
       <div className="w-full max-w-5xl">
         <div className="w-full">
-          <FlipBook pages={bookData} />
+          <FlipBook pages={bookData} srcAudio="/sound-lion/lion.mp3" />
         </div>
       </div>
     </main>

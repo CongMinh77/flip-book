@@ -37,7 +37,7 @@ const AudioPlayer = ({ src, pageNumber }: { src: string; pageNumber: number }) =
     <>
       <button
         onClick={(e) => togglePlay(e as React.MouseEvent)}
-        className="absolute right-[50%] translate-x-1/2 bottom-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg z-10"
+        className=" bg-blue-500 hover:bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg z-10"
         aria-label={isPlaying ? "Pause audio" : "Play audio"}
         onMouseDown={(e) => e.stopPropagation()} // Prevent any mouse down events from bubbling
         onTouchStart={(e) => e.stopPropagation()}>
@@ -79,9 +79,10 @@ interface PageType {
 interface FlipBookProps {
   pages: PageType[];
   height?: number;
+  srcAudio: string;
 }
 
-export const FlipBook: React.FC<FlipBookProps> = ({ pages, height = 800 }) => {
+export const FlipBook: React.FC<FlipBookProps> = ({ pages, height = 800, srcAudio }) => {
   const book = useRef<any>(null);
   const [currentPage, setCurrentPage] = useState(0);
   const [totalPages, setTotalPages] = useState(pages.length);
@@ -141,6 +142,8 @@ export const FlipBook: React.FC<FlipBookProps> = ({ pages, height = 800 }) => {
           ))}
         </HTMLFlipBook>
       </div>
+
+      <AudioPlayer src={`${srcAudio}`} pageNumber={1} />
 
       <div className="flex justify-center gap-4 mt-4">
         <button
