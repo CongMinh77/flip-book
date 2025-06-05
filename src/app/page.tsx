@@ -18,7 +18,14 @@ const bookData = [
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Chú Vịt Xám</h1>
         <p className="text-lg md:text-xl italic">Trang bìa</p>
         <div className="mt-8">
-          <img src="/book-cover.jpg" alt="Book Cover" className="mx-auto rounded-lg shadow-lg" />
+          <img 
+            src="https://placehold.co/400x600/4f46e5/ffffff?text=Chú+Vịt+Xám" 
+            alt="Book Cover" 
+            className="mx-auto rounded-lg shadow-lg w-full max-w-xs"
+            onError={(e) => {
+              e.currentTarget.src = 'https://placehold.co/400x600/4f46e5/ffffff?text=Cover+Not+Found';
+            }}
+          />
         </div>
       </div>
     ),
@@ -37,7 +44,14 @@ const bookData = [
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
         <div className="mt-6">
-          <img src="/chapter1-image.jpg" alt="Chapter 1 Illustration" className="mx-auto rounded-lg shadow-lg" />
+          <img 
+            src="https://placehold.co/600x400/4f46e5/ffffff?text=Chương+1" 
+            alt="Chapter 1 Illustration" 
+            className="mx-auto rounded-lg shadow-lg w-full max-w-lg"
+            onError={(e) => {
+              e.currentTarget.src = 'https://placehold.co/600x400/4f46e5/ffffff?text=Image+Not+Found';
+            }}
+          />
         </div>
       </div>
     ),
@@ -56,7 +70,14 @@ const bookData = [
           aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
         </p>
         <div className="mt-6">
-          <img src="/chapter2-image.jpg" alt="Chapter 2 Illustration" className="mx-auto rounded-lg shadow-lg" />
+          <img 
+            src="https://placehold.co/600x400/4f46e5/ffffff?text=Chương+2" 
+            alt="Chapter 2 Illustration" 
+            className="mx-auto rounded-lg shadow-lg w-full max-w-lg"
+            onError={(e) => {
+              e.currentTarget.src = 'https://placehold.co/600x400/4f46e5/ffffff?text=Image+Not+Found';
+            }}
+          />
         </div>
       </div>
     ),
@@ -76,7 +97,14 @@ const bookData = [
           numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
         </p>
         <div className="mt-6">
-          <img src="/chapter3-image.jpg" alt="Chapter 3 Illustration" className="mx-auto rounded-lg shadow-lg" />
+          <img 
+            src="https://placehold.co/600x400/4f46e5/ffffff?text=Chương+3" 
+            alt="Chapter 3 Illustration" 
+            className="mx-auto rounded-lg shadow-lg w-full max-w-lg"
+            onError={(e) => {
+              e.currentTarget.src = 'https://placehold.co/600x400/4f46e5/ffffff?text=Image+Not+Found';
+            }}
+          />
         </div>
       </div>
     ),
@@ -92,7 +120,14 @@ const bookData = [
           molestias excepturi.
         </p>
         <div className="mt-6">
-          <img src="/chapter4-image.jpg" alt="Chapter 4 Illustration" className="mx-auto rounded-lg shadow-lg" />
+          <img 
+            src="https://placehold.co/600x400/4f46e5/ffffff?text=Chương+4" 
+            alt="Chapter 4 Illustration" 
+            className="mx-auto rounded-lg shadow-lg w-full max-w-lg"
+            onError={(e) => {
+              e.currentTarget.src = 'https://placehold.co/600x400/4f46e5/ffffff?text=Image+Not+Found';
+            }}
+          />
         </div>
       </div>
     ),
@@ -108,7 +143,14 @@ const bookData = [
           nulla pariatur.
         </p>
         <div className="mt-6">
-          <img src="/chapter5-image.jpg" alt="Chapter 5 Illustration" className="mx-auto rounded-lg shadow-lg" />
+          <img 
+            src="https://placehold.co/600x400/4f46e5/ffffff?text=Chương+5" 
+            alt="Chapter 5 Illustration" 
+            className="mx-auto rounded-lg shadow-lg w-full max-w-lg"
+            onError={(e) => {
+              e.currentTarget.src = 'https://placehold.co/600x400/4f46e5/ffffff?text=Image+Not+Found';
+            }}
+          />
         </div>
       </div>
     ),
@@ -126,14 +168,21 @@ const bookData = [
         <div className="mt-6 flex justify-center">
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="/chapter6-image1.jpg"
+              src="https://placehold.co/300x200/4f46e5/ffffff?text=Hình+1"
               alt="Chapter 6 Illustration 1"
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg w-full h-auto"
               onError={(e) => {
-                e.currentTarget.src = "https://via.placeholder.com/200x150?text=Hình+1";
+                e.currentTarget.src = 'https://placehold.co/300x200/4f46e5/ffffff?text=Image+Not+Found';
               }}
             />
-            <img src="/chapter6-image2.jpg" alt="Chapter 6 Illustration 2" className="rounded-lg shadow-lg" />
+            <img 
+              src="https://placehold.co/300x200/4f46e5/ffffff?text=Hình+2" 
+              alt="Chapter 6 Illustration 2" 
+              className="rounded-lg shadow-lg w-full h-auto"
+              onError={(e) => {
+                e.currentTarget.src = 'https://placehold.co/300x200/4f46e5/ffffff?text=Image+Not+Found';
+              }}
+            />
           </div>
         </div>
       </div>
@@ -150,7 +199,14 @@ const bookData = [
           asperiores repellat.
         </p>
         <div className="mt-6">
-          <img src="/chapter7-image.jpg" alt="Chapter 7 Illustration" className="mx-auto rounded-lg shadow-lg" />
+          <img 
+            src="https://placehold.co/600x400/4f46e5/ffffff?text=Chương+7" 
+            alt="Chapter 7 Illustration" 
+            className="mx-auto rounded-lg shadow-lg w-full max-w-lg"
+            onError={(e) => {
+              e.currentTarget.src = 'https://placehold.co/600x400/4f46e5/ffffff?text=Image+Not+Found';
+            }}
+          />
         </div>
       </div>
     ),
@@ -165,7 +221,14 @@ const bookData = [
           est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.
         </p>
         <div className="mt-6">
-          <img src="/chapter8-image.jpg" alt="Chapter 8 Illustration" className="mx-auto rounded-lg shadow-lg" />
+          <img 
+            src="https://placehold.co/600x400/4f46e5/ffffff?text=Chương+8" 
+            alt="Chapter 8 Illustration" 
+            className="mx-auto rounded-lg shadow-lg w-full max-w-lg"
+            onError={(e) => {
+              e.currentTarget.src = 'https://placehold.co/600x400/4f46e5/ffffff?text=Image+Not+Found';
+            }}
+          />
         </div>
       </div>
     ),
@@ -181,8 +244,22 @@ const bookData = [
         </p>
         <div className="mt-6 flex justify-center">
           <div className="grid grid-cols-2 gap-4">
-            <img src="/chapter9-image1.jpg" alt="Chapter 9 Illustration 1" className="rounded-lg shadow-lg" />
-            <img src="/chapter9-image2.jpg" alt="Chapter 9 Illustration 2" className="rounded-lg shadow-lg" />
+            <img 
+              src="https://placehold.co/300x200/4f46e5/ffffff?text=Hình+3" 
+              alt="Chapter 9 Illustration 1" 
+              className="rounded-lg shadow-lg w-full h-auto"
+              onError={(e) => {
+                e.currentTarget.src = 'https://placehold.co/300x200/4f46e5/ffffff?text=Image+Not+Found';
+              }}
+            />
+            <img 
+              src="https://placehold.co/300x200/4f46e5/ffffff?text=Hình+4" 
+              alt="Chapter 9 Illustration 2" 
+              className="rounded-lg shadow-lg w-full h-auto"
+              onError={(e) => {
+                e.currentTarget.src = 'https://placehold.co/300x200/4f46e5/ffffff?text=Image+Not+Found';
+              }}
+            />
           </div>
         </div>
       </div>
@@ -198,7 +275,14 @@ const bookData = [
           repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus.
         </p>
         <div className="mt-6">
-          <img src="/chapter10-image.jpg" alt="Chapter 10 Illustration" className="mx-auto rounded-lg shadow-lg" />
+          <img 
+            src="https://placehold.co/600x400/4f46e5/ffffff?text=Chương+10" 
+            alt="Chapter 10 Illustration" 
+            className="mx-auto rounded-lg shadow-lg w-full max-w-lg"
+            onError={(e) => {
+              e.currentTarget.src = 'https://placehold.co/600x400/4f46e5/ffffff?text=Image+Not+Found';
+            }}
+          />
         </div>
       </div>
     ),
@@ -213,7 +297,14 @@ const bookData = [
           alias consequatur aut perferendis doloribus asperiores repellat.
         </p>
         <div className="mt-6">
-          <img src="/chapter11-image.jpg" alt="Chapter 11 Illustration" className="mx-auto rounded-lg shadow-lg" />
+          <img 
+            src="https://placehold.co/600x400/4f46e5/ffffff?text=Chương+11" 
+            alt="Chapter 11 Illustration" 
+            className="mx-auto rounded-lg shadow-lg w-full max-w-lg"
+            onError={(e) => {
+              e.currentTarget.src = 'https://placehold.co/600x400/4f46e5/ffffff?text=Image+Not+Found';
+            }}
+          />
         </div>
       </div>
     ),
@@ -226,11 +317,12 @@ const bookData = [
         <p className="mb-6">Cảm ơn bạn đã đọc sách mẫu này!</p>
         <div className="mt-8">
           <img
-            width={550}
-            height={733}
-            src="/image/wallhaven-4gd187_1920x1080.png"
-            alt="Book End"
-            className="mx-auto rounded-lg shadow-lg"
+            src="https://placehold.co/400x600/4f46e5/ffffff?text=Hết"
+            alt="Kết thúc"
+            className="mx-auto rounded-lg shadow-lg w-full max-w-xs"
+            onError={(e) => {
+              e.currentTarget.src = 'https://placehold.co/400x600/4f46e5/ffffff?text=The+End';
+            }}
           />
         </div>
       </div>
