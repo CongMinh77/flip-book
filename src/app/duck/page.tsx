@@ -136,6 +136,9 @@ const bookData = [
       <div className="relative">
         <div className="absolute top-3 left-3 rounded-lg p-2 bg-white/80">
           <p className="mb-2">
+            Nói rồi Cáo đi nhanh ra phía bờ ao. Khi Cáo vừa ra đến nơi thì cũng là lúc Vịt mẹ tìm thấy Vịt Xám
+          </p>
+          <p className="mb-2">
             Trông thấy Cáo, Vịt mẹ vội dẫn Vịt Xám nhảy tủm xuống ao. Thế là Vịt Xám thoát chết. Từ đấy Vịt Xám không
             bao giờ dám làm sai lời mẹ dặn
           </p>

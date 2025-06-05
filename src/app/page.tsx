@@ -125,9 +125,6 @@ const bookData = [
       <div className="relative">
         <div className="absolute bottom-3 left-3 bg-white/80 rounded-lg p-2 w-1/2">
           <p className="mb-2">
-            Nói rồi Cáo đi nhanh ra phía bờ ao. Khi Cáo vừa ra đến nơi thì cũng là lúc Vịt mẹ tìm thấy Vịt Xám
-          </p>
-          <p className="mb-2">
             Nhưng không may vài ngày sau, chuột thấy sư tử bị mắc bẫy của thợ săn và liền gặm dây lưới cứu sư tử.
           </p>
           <p>Nhờ đó, sư tử được tự do. Sư tử cảm ơn chuột</p>
