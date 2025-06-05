@@ -317,7 +317,9 @@ const bookData = [
         <p className="mb-6">Cảm ơn bạn đã đọc sách mẫu này!</p>
         <div className="mt-8">
           <img
-            src="/book-end.jpg"
+            width={550}
+            height={733}
+            src="/image/wallhaven-4gd187_1920x1080.png"
             alt="Book End"
             className="mx-auto rounded-lg shadow-lg"
             onError={(e) => {
