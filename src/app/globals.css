@@ -10,12 +10,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
   min-height: 100vh;
 }
 
@@ -36,7 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 1rem;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -60,7 +55,7 @@ body {
     border: none;
     box-shadow: none;
   }
-  
+
   .page-content {
     padding: 1rem;
   }
