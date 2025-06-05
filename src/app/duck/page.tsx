@@ -35,7 +35,9 @@ const bookData = [
   {
     content: (
       <div>
-        <p className="mb-4">Ngày xửa ngày xưa, có một chú vịt xám sống cùng mẹ và các anh chị em trong một cái ao nhỏ.</p>
+        <p className="mb-4">
+          Ngày xửa ngày xưa, có một chú vịt xám sống cùng mẹ và các anh chị em trong một cái ao nhỏ.
+        </p>
         <p>Một hôm, vịt mẹ dẫn đàn con đi chơi, chúng vừa đi vừa kêu "cạp cạp" vui vẻ.</p>
         <div className="mt-6">
           <img
@@ -54,7 +56,9 @@ const bookData = [
   {
     content: (
       <div>
-        <p className="mb-4">Đi được một quãng, chúng gặp một con cua. Cua bò ngang, càng vung vẩy trông rất ngộ nghĩnh.</p>
+        <p className="mb-4">
+          Đi được một quãng, chúng gặp một con cua. Cua bò ngang, càng vung vẩy trông rất ngộ nghĩnh.
+        </p>
         <p>Vịt con thích quá, chạy đến xem. Cua thấy thế, giơ càng lên kêu "bộp bộp".</p>
         <div className="mt-6">
           <img
@@ -72,9 +76,13 @@ const bookData = [
   },
   {
     content: (
-      <div>
-        <p className="mb-4">Đi tiếp, chúng gặp một con tôm. Tôm cũng bò ngang như cua nhưng có rất nhiều chân và càng nhỏ hơn.</p>
-        <p>Vịt con chạy đến xem thì tôm nhảy tũm xuống nước mất tăm.</p>
+      <div className="relative">
+        <div className="absolute top-0 left-0 bg-white">
+          <p className="mb-4">
+            Đi tiếp, chúng gặp một con tôm. Tôm cũng bò ngang như cua nhưng có rất nhiều chân và càng nhỏ hơn.
+          </p>
+          <p>Vịt con chạy đến xem thì tôm nhảy tũm xuống nước mất tăm.</p>
+        </div>
         <div className="mt-6">
           <img
             src="/duck/4.webp"
@@ -92,7 +100,10 @@ const bookData = [
   {
     content: (
       <div>
-        <p className="mb-4">Vịt con nhìn xuống nước thấy đàn cá, tôm bơi lội tung tăng dưới nước, thỉnh thoảng một con tôm cong mình nhảy tanh tách.</p>
+        <p className="mb-4">
+          Vịt con nhìn xuống nước thấy đàn cá, tôm bơi lội tung tăng dưới nước, thỉnh thoảng một con tôm cong mình nhảy
+          tanh tách.
+        </p>
         <p>Thích quá, chú nhảy xuống mò lấy, mò để. Lúc lên bờ, chú đã bị lạc mất mẹ.</p>
         <div className="mt-6">
           <img
