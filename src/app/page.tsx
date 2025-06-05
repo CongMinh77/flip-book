@@ -52,7 +52,7 @@ const bookData = [
       </div>
     ),
     pageNumber: 2,
-    audioSrc: "/sound-lion/demo1.mp3",
+    audioSrc: "/sound-lion/1.mp3",
   },
   {
     content: (
@@ -75,6 +75,7 @@ const bookData = [
       </div>
     ),
     pageNumber: 3,
+    audioSrc: "/sound-lion/2.mp3",
   },
   {
     content: (
@@ -96,6 +97,7 @@ const bookData = [
       </div>
     ),
     pageNumber: 4,
+    audioSrc: "/sound-lion/3.mp3",
   },
   {
     content: (
@@ -119,6 +121,7 @@ const bookData = [
       </div>
     ),
     pageNumber: 5,
+    audioSrc: "/sound-lion/4.mp3",
   },
   {
     content: (
@@ -143,6 +146,7 @@ const bookData = [
       </div>
     ),
     pageNumber: 6,
+    audioSrc: "/sound-lion/5.mp3",
   },
 ];
 
