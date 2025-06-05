@@ -142,8 +142,6 @@ export const FlipBook: React.FC<FlipBookProps> = ({ pages, height = 800 }) => {
         </HTMLFlipBook>
       </div>
 
-      <AudioPlayer src={`/sound-lion/demo.mp3`} pageNumber={1} />
-
       <div className="flex justify-center gap-4 mt-4">
         <button
           onClick={prevPage}

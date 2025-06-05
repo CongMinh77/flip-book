@@ -125,9 +125,10 @@ const bookData = [
       <div className="relative">
         <div className="absolute bottom-3 left-3 bg-white/80 rounded-lg p-2 w-1/2">
           <p className="mb-2">
-            Nhưng không may vài ngày sau, chuột thấy sư tử bị mắc bẫy của thợ săn và liền gặm dây lưới cứu sư tử.
+            Nhưng không may vài ngày sau, sư tử bị mắc bẫy của thợ săn. Vừa đúng lúc chuột đi ngang qua thấy vậy liền
+            gặm dây lưới cứu sư tử.
           </p>
-          <p>Nhờ đó, sư tử được tự do. Sư tử cảm ơn chuột</p>
+          <p>Nhờ đó, sư tử mới được tự do. Sư tử biết ơn chuột rất nhiều</p>
         </div>
         <div className="mt-3">
           <img
