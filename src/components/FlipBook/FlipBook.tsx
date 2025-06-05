@@ -42,7 +42,7 @@ export const FlipBook: React.FC<FlipBookProps> = ({ pages }) => {
       <div className="w-full max-w-4xl mx-auto my-8">
         <HTMLFlipBook
           width={1200}
-          height={800}
+          height={900}
           size="stretch"
           minWidth={550}
           maxWidth={1200}
